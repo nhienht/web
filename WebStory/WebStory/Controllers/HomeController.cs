@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using WebStory.DAO;
+using WebStory.Models;
 
 namespace WebStory.Controllers
 {
@@ -13,18 +15,25 @@ namespace WebStory.Controllers
             return View();
         }
 
-        public ActionResult About()
+        public ActionResult Register(FormCollection formCollection)
         {
-            ViewBag.Message = "Your application description page.";
+            UserDAO u = new UserDAO();
+            string tenNguoiDung = formCollection["tenNguoiDung"];
+            string email = formCollection["email"];
+            string password = formCollection["password"];
+          
+            DateTime ngaysinh = Convert.ToDateTime(formCollection["ngaysinh"]);
+            int gioitinh = Convert.ToInt32(formCollection["gioitinh"]);
+            
+       
+
+            u.CreateUser(tenNguoiDung, email, password, ngaysinh, gioitinh);
+            
+
 
             return View();
         }
 
-        public ActionResult Contact()
-        {
-            ViewBag.Message = "Your contact page.";
-
-            return View();
-        }
+        
     }
 }
