@@ -5,12 +5,13 @@ using System.Web;
 using System.Data.SqlClient;
 using System.Web.Services.Description;
 using System.Windows;
+using MySql.Data.MySqlClient;
 
 namespace WebStory.DAO
 {
     public class UserDAO
     {
-        private SqlConnection conn { get; set; }
+        private MySqlConnection conn { get; set; }
         public UserDAO()
         {
             this.conn = new DBConnection.DBConnection().conn;
@@ -25,7 +26,7 @@ namespace WebStory.DAO
                 {
                     string insertData = "insert into nguoidung(tenND, email, password ,ngaysinh, gioitinh)" +
                                          "values (@tenNguoiDung,@email,@password,@ngaysinh,@gioitinh)";
-                    SqlCommand command = new SqlCommand(insertData, conn);
+                    MySqlCommand command = new MySqlCommand(insertData, conn);
 
 
                     command.Parameters.AddWithValue("@tenNguoiDung", tenNguoiDung);
