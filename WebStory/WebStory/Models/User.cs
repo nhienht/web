@@ -20,14 +20,14 @@
         /// Defines the tenNguoiDung.
         /// </summary>
         /// 
-        [Display(Name = "Nhap ten")]
+        [Display(Name = "Enter name")]
         [Required(AllowEmptyStrings = false, ErrorMessage = "Ten khong duoc de trong")]
         public String tenNguoiDung { get; set; }
 
         /// <summary>
         /// Defines the email.
         /// </summary>
-        [Display(Name = "Nhap Email")]
+        [Display(Name = "Enter Email")]
         [Required(AllowEmptyStrings = false, ErrorMessage = "Email khong duoc de trong")]
         public String email { get; set; }
 

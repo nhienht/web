@@ -24,14 +24,15 @@ namespace WebStory.Controllers
           
             DateTime ngaysinh = Convert.ToDateTime(formCollection["ngaysinh"]);
             int gioitinh = Convert.ToInt32(formCollection["gioitinh"]);
+            if (formCollection["submit"] != null)
+            {
+                u.CreateUser(tenNguoiDung, email, password, ngaysinh, gioitinh);
+                
+            }
+             
+            return View(); 
             
-       
-
-            u.CreateUser(tenNguoiDung, email, password, ngaysinh, gioitinh);
             
-
-
-            return View();
         }
 
         
