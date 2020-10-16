@@ -24,7 +24,7 @@ namespace WebStory.DAO
             {
                 try
                 {
-                    string insertData = "insert into nguoidung(tenND, email, password ,ngaysinh, gioitinh)" +
+                    string insertData = "insert into nguoidung(tenNguoiDung, email, password ,ngaysinh, gioitinh)" +
                                          "values (@tenNguoiDung,@email,@password,@ngaysinh,@gioitinh)";
                     MySqlCommand command = new MySqlCommand(insertData, conn);
 
