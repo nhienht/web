@@ -6,7 +6,7 @@ namespace WebStory.Models
         public truyenyeuthich() { }
 
         private int idTruyenYeuThich;//store id for truyen yeu thich
-        private int idNguoidung;//store id for nguoi dung
+        private int idNguoiDung;//store id for nguoi dung
         private int idTruyen;//stote id for truyen
 
         /**
@@ -19,7 +19,7 @@ namespace WebStory.Models
         public truyenyeuthich(int idTruyenYeuThich, int idNguoidung, int idTruyen)
         {
             this.idTruyenYeuThich = idTruyenYeuThich;
-            this.idNguoidung = idNguoidung;
+            this.idNguoiDung = idNguoidung;
             this.idTruyen = idTruyen;
         }
 
@@ -50,7 +50,7 @@ namespace WebStory.Models
          */
         public int getIdNguoidung()
         {
-            return idNguoidung;
+            return idNguoiDung;
         }
 
         /**
@@ -60,7 +60,7 @@ namespace WebStory.Models
          */
         public void setIdNguoidung(int idNguoidung)
         {
-            this.idNguoidung = idNguoidung;
+            this.idNguoiDung = idNguoidung;
         }
 
         /**
@@ -70,6 +70,7 @@ namespace WebStory.Models
          */
         public int getIdTruyen()
         {
+            
             return idTruyen;
         }
 
