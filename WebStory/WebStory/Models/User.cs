@@ -57,7 +57,7 @@
         /// <summary>
         /// Defines the trangThai.
         /// </summary>
-        public int trangThai { get; set; }
+        public int trangThaiND { get; set; }
 
         /// <summary>
         /// Defines the quyen.
@@ -81,14 +81,14 @@
         /// <param name="gioitinh">The gioitinh<see cref="int"/>.</param>
         /// <param name="trangThai">The trangThai<see cref="int"/>.</param>
         /// <param name="quyen">The quyen<see cref="int"/>.</param>
-        public User(int idNguoiDung, String tenNguoiDung, String email, DateTime ngaysinh, int gioitinh, int trangThai, int quyen)
+        public User(int idNguoiDung, String tenNguoiDung, String email, DateTime ngaysinh, int gioitinh, int trangThaiND, int quyen)
         {
             this.idNguoiDung = idNguoiDung;
             this.tenNguoiDung = tenNguoiDung;
             this.email = email;
             this.ngaysinh = ngaysinh;
             this.gioitinh = gioitinh;
-            this.trangThai = trangThai;
+            this.trangThaiND = trangThaiND;
             this.quyen = quyen;
         }
 

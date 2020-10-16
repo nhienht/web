@@ -13,13 +13,13 @@ namespace WebStory.Models
         private String tieuDe;
         private String noiDung;
         private DateTime ngayDang;
-        private int trangthai;
+        private int trangthaiCT;
         public Chapter()
         {
 
         }
 
-        public Chapter(int idChap, int idTruyen, int soThuTu, String tieuDe, String noiDung, DateTime ngayDang, int trangthai)
+        public Chapter(int idChap, int idTruyen, int soThuTu, String tieuDe, String noiDung, DateTime ngayDang, int trangthaiCT)
         {
             this.idChap = idChap;
             this.idTruyen = idTruyen;
@@ -27,7 +27,7 @@ namespace WebStory.Models
             this.tieuDe = tieuDe;
             this.noiDung = noiDung;
             this.ngayDang = ngayDang;
-            this.trangthai = trangthai;
+            this.trangthaiCT = trangthaiCT;
         }
 
         public int getIdChap()
@@ -92,12 +92,12 @@ namespace WebStory.Models
 
         public int getTrangthai()
         {
-            return trangthai;
+            return trangthaiCT;
         }
 
-        public void setTrangthai(int trangthai)
+        public void setTrangthai(int trangthaiCT)
         {
-            this.trangthai = trangthai;
+            this.trangthaiCT = trangthaiCT;
         }
     }
 }

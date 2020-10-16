@@ -30,7 +30,7 @@
         /// <summary>
         /// Defines the trangthai.
         /// </summary>
-        private int trangthai;
+        private int trangthaiBL;
 
         /// <summary>
         /// Defines the ngayBinhLuan.
@@ -53,13 +53,13 @@
         /// <param name="idnguoidung">The idnguoidung<see cref="int"/>.</param>
         /// <param name="trangthai">The trangthai<see cref="int"/>.</param>
         /// <param name="ngayBinhLuan">The ngayBinhLuan<see cref="DateTime"/>.</param>
-        public BinhLuan(int idBinhLuan, int idTruyen, String noiDung, int idnguoidung, int trangthai, DateTime ngayBinhLuan)
+        public BinhLuan(int idBinhLuan, int idTruyen, String noiDung, int idnguoidung, int trangthaiBL, DateTime ngayBinhLuan)
         {
             this.idBinhLuan = idBinhLuan;
             this.idTruyen = idTruyen;
             this.noiDung = noiDung;
             this.idnguoidung = idnguoidung;
-            this.trangthai = trangthai;
+            this.trangthaiBL = trangthaiBL;
             this.ngayBinhLuan = ngayBinhLuan;
         }
 
@@ -141,16 +141,16 @@
         /// <returns>The <see cref="int"/>.</returns>
         public int getTrangthai()
         {
-            return trangthai;
+            return trangthaiBL;
         }
 
         /// <summary>
         /// The setTrangthai.
         /// </summary>
         /// <param name="trangthai">The trangthai<see cref="int"/>.</param>
-        public void setTrangthai(int trangthai)
+        public void setTrangthai(int trangthaiBL)
         {
-            this.trangthai = trangthai;
+            this.trangthaiBL = trangthaiBL;
         }
 
         /// <summary>

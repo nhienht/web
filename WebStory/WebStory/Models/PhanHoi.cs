@@ -10,32 +10,32 @@
         /// <summary>
         /// Defines the idPhanhoi.
         /// </summary>
-        private int idPhanhoi;
+        public int idPhanhoi { get; set; }
 
         /// <summary>
         /// Defines the idnguoidung.
         /// </summary>
-        private int idnguoidung;
+        private int idNguoiDung { get; set; }
 
         /// <summary>
         /// Defines the tieude.
         /// </summary>
-        private String tieude;
+        private String tieude { get; set; }
 
         /// <summary>
         /// Defines the noiDung.
         /// </summary>
-        private String noiDung;
+        private String noiDungPH { get; set; }
 
         /// <summary>
         /// Defines the ngay.
         /// </summary>
-        private DateTime ngay;
+        private DateTime ngayPH { get; set; }
 
         /// <summary>
         /// Defines the trangthai.
         /// </summary>
-        private int trangthai;
+        private int trangthaiPH { get; set; }
 
         /// <summary>
         /// Initializes a new instance of the <see cref="PhanHoi"/> class.
@@ -53,122 +53,16 @@
         /// <param name="noiDung">The noiDung<see cref="String"/>.</param>
         /// <param name="ngay">The ngay<see cref="DateTime"/>.</param>
         /// <param name="trangthai">The trangthai<see cref="int"/>.</param>
-        public PhanHoi(int idPhanhoi, int idnguoidung, String tieude, String noiDung, DateTime ngay, int trangthai)
+        public PhanHoi(int idPhanhoi, int idNguoiDung, String tieude, String noiDungPH, DateTime ngayPH, int trangthaiPH)
         {
             this.idPhanhoi = idPhanhoi;
-            this.idnguoidung = idnguoidung;
+            this.idNguoiDung = idNguoiDung;
             this.tieude = tieude;
-            this.noiDung = noiDung;
-            this.ngay = ngay;
-            this.trangthai = trangthai;
+            this.noiDungPH = noiDungPH;
+            this.ngayPH = ngayPH;
+            this.trangthaiPH = trangthaiPH;
         }
 
-        /// <summary>
-        /// The getIdPhanhoi.
-        /// </summary>
-        /// <returns>The <see cref="int"/>.</returns>
-        public int getIdPhanhoi()
-        {
-            return idPhanhoi;
-        }
-
-        /// <summary>
-        /// The setIdPhanhoi.
-        /// </summary>
-        /// <param name="idPhanhoi">The idPhanhoi<see cref="int"/>.</param>
-        public void setIdPhanhoi(int idPhanhoi)
-        {
-            this.idPhanhoi = idPhanhoi;
-        }
-
-        /// <summary>
-        /// The getIdnguoidung.
-        /// </summary>
-        /// <returns>The <see cref="int"/>.</returns>
-        public int getIdnguoidung()
-        {
-            return idnguoidung;
-        }
-
-        /// <summary>
-        /// The setIdnguoidung.
-        /// </summary>
-        /// <param name="idnguoidung">The idnguoidung<see cref="int"/>.</param>
-        public void setIdnguoidung(int idnguoidung)
-        {
-            this.idnguoidung = idnguoidung;
-        }
-
-        /// <summary>
-        /// The getTieude.
-        /// </summary>
-        /// <returns>The <see cref="String"/>.</returns>
-        public String getTieude()
-        {
-            return tieude;
-        }
-
-        /// <summary>
-        /// The setTieude.
-        /// </summary>
-        /// <param name="tieude">The tieude<see cref="String"/>.</param>
-        public void setTieude(String tieude)
-        {
-            this.tieude = tieude;
-        }
-
-        /// <summary>
-        /// The getNoiDung.
-        /// </summary>
-        /// <returns>The <see cref="String"/>.</returns>
-        public String getNoiDung()
-        {
-            return noiDung;
-        }
-
-        /// <summary>
-        /// The setNoiDung.
-        /// </summary>
-        /// <param name="noiDung">The noiDung<see cref="String"/>.</param>
-        public void setNoiDung(String noiDung)
-        {
-            this.noiDung = noiDung;
-        }
-
-        /// <summary>
-        /// The getNgay.
-        /// </summary>
-        /// <returns>The <see cref="DateTime"/>.</returns>
-        public DateTime getNgay()
-        {
-            return ngay;
-        }
-
-        /// <summary>
-        /// The setNgay.
-        /// </summary>
-        /// <param name="ngay">The ngay<see cref="DateTime"/>.</param>
-        public void setNgay(DateTime ngay)
-        {
-            this.ngay = ngay;
-        }
-
-        /// <summary>
-        /// The getTrangthai.
-        /// </summary>
-        /// <returns>The <see cref="int"/>.</returns>
-        public int getTrangthai()
-        {
-            return trangthai;
-        }
-
-        /// <summary>
-        /// The setTrangthai.
-        /// </summary>
-        /// <param name="trangthai">The trangthai<see cref="int"/>.</param>
-        public void setTrangthai(int trangthai)
-        {
-            this.trangthai = trangthai;
-        }
+        
     }
 }

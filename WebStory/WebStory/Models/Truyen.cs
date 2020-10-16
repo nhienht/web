@@ -7,23 +7,24 @@ namespace WebStory.Models
 {
     public class Truyen
     {
-        private int idTruyen { get; set; }
-        private String tenTruyen { get; set; }
-        private String tomTat { get; set; }
-        private DateTime ngayTao { get; set; }
-        private String poster { get; set; }
-        private String nguon { get; set; }
-        private int SLND { get; set; }
-        private int idLoai { get; set; }
-        private int idQuyen { get; set; }
-        private int idTTTHT { get; set; }
-        private int idND { get; set; }
+        public int idTruyen { get; set; }
+        public String tenTruyen { get; set; }
+        public String tomTat { get; set; }
+        public DateTime ngayTao { get; set; }
+        public String poster { get; set; }
+        public String nguon { get; set; }
+        public int SLND { get; set; }
+        public int idLoai { get; set; }
+        public int idQuyen { get; set; }
+        public int idTTTHT { get; set; }
+        public int idND { get; set; }
+        public int trangthaiTruyen { get; set; }
         public Truyen()
         {
 
         }
 
-        public Truyen(int idTruyen, String tenTruyen, String tomTat, DateTime ngayTao, String poster, String nguon, int SLND, int idLoai, int idQuyen, int idTTTHT, int idnguoidung)
+        public Truyen(int idTruyen, String tenTruyen, String tomTat, DateTime ngayTao, String poster, String nguon, int SLND, int idLoai, int idQuyen, int idTTTHT, int idnguoidung, int trangthaiTruyen)
         {
             this.idTruyen = idTruyen;
             this.tenTruyen = tenTruyen;
@@ -36,6 +37,7 @@ namespace WebStory.Models
             this.idQuyen = idQuyen;
             this.idTTTHT = idTTTHT;
             this.idND = idnguoidung;
+            this.trangthaiTruyen = trangthaiTruyen;
         }
 
 
