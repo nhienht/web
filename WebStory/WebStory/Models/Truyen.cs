@@ -7,17 +7,17 @@ namespace WebStory.Models
 {
     public class Truyen
     {
-        private int idTruyen { get; set; }
-        private String tenTruyen { get; set; }
-        private String tomTat { get; set; }
-        private DateTime ngayTao { get; set; }
-        private String poster { get; set; }
-        private String nguon { get; set; }
-        private int SLND { get; set; }
-        private int idLoai { get; set; }
-        private int idQuyen { get; set; }
-        private int idTTTHT { get; set; }
-        private int idND { get; set; }
+        public int idTruyen { get; set; }
+        public String tenTruyen { get; set; }
+        public String tomTat { get; set; }
+        public DateTime ngayTao { get; set; }
+        public String poster { get; set; }
+        public String nguon { get; set; }
+        public int SLND { get; set; }
+        public int idLoai { get; set; }
+        public int idQuyen { get; set; }
+        public int idTTTHT { get; set; }
+        public int idND { get; set; }
         public Truyen()
         {
 

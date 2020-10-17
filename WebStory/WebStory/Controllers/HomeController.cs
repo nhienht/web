@@ -14,6 +14,10 @@ namespace WebStory.Controllers
         {
             return View();
         }
+        public ActionResult Truyen()
+        {
+            return View();
+        }
 
         public ActionResult Register(FormCollection formCollection)
         {
